@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+body {
+    background-color: #e3eadd;
+    color: #000000;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+header.hero{
+    position: relative;
+    background: url("bukchon hanok.webp");
+    background-size: cover;
+    background-position: center;
+    background-color: #313740;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header .overlay{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-text{
+    position: relative;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 3rem ;
+    margin-bottom: 0,5rem;
+}
+
+.container { 
+    max-width: 1100;
+    margin:  auto;
+    padding: 20px;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;  
+}
+
+.card {
+    flex: 1;
+    min-width: rgb(228, 217, 217);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+
+.about, .tips{
+    background: white;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0.0.0.0.5);
+}
+
+footer{
+    background: #f0eee9;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555
+}
+
