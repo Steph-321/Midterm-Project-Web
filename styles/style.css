@@ -1,3 +1,4 @@
+/* OVERVIEW PAGE */
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +20,12 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 20px;
     width: 100%;
     left: 0;
     z-index: 1000;
+    padding: 20px 0;
     /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); */
     /* background: rgba(245, 243, 216, 0.95); */
 }
@@ -34,6 +36,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .logo-container {
@@ -67,7 +70,7 @@ header {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('bg.jpg') no-repeat center center/cover;
+    background: url('../assets/bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +78,7 @@ header {
     flex-direction: column;
     color: #f5f3d8;
     margin-top: 0;
+    background-color: red;
 }
 
 .overlay {
@@ -83,7 +87,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(135, 174, 206, 0.1), rgba(175, 208, 110, 0.1));   */
+    background: linear-gradient(to bottom, rgba(135, 174, 206, 0.1), rgba(175, 208, 110, 0.1));   
     z-index: 1;
 }
 
@@ -114,13 +118,15 @@ header {
     text-decoration: none;
     background-color: #afd06e;
     color: #f5f3d8;
-    padding: 15px 30px;
+    padding: 15px 15px;
     border-radius: 50px;
     font-weight: bold;
     font-size: 1rem;
     transition: 0.3s ease;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: inline-block;
+    width: auto;
+    max-width: fit-content;
 }
 
 .btn:hover {
@@ -265,6 +271,10 @@ footer{
         font-size: 2rem;
     }
 
-    .about,
-    .features
+    .about, .features{
+        padding: 60px 0;
+    }
 }
+
+
+
