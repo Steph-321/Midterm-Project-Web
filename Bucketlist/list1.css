@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background: url("tree.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  rgb(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    background: rgb(255,255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: (10px);
+    padding: 40px 60px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.wisteria {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    color: #e8eeeb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 3px rgba(54, 88, 25, 0.8);
+}
+
+p{
+    color: #95aa9a;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+
+.bucket-list{
+    text-align: left;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid #145a32;
+    font-weight: 300;
+}
+
+.item:hover {
+    background-color: rgba(220, 255, 220, 0.9);
+    transform: scale(1.02);
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #145a32;
+    cursor: pointer;
+
+}
+
+.item input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+
+}
+
