@@ -11,6 +11,7 @@ body {
     color: #87aece;
     scroll-behavior: smooth;
     line-height: 1.6;
+    background: linear-gradient(to bottom, #f5f3d8, #afd06e);
 }
 
 .container {
@@ -143,7 +144,7 @@ header {
 
 .about h2 {
     font-size: 2.5rem;
-    color: #afd06e;
+    color: #437118;
     margin-bottom: 20px;
 }
 
@@ -151,7 +152,7 @@ header {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #87aece;
+    color: #1d2a62;
 }
 
 .features {
@@ -187,13 +188,13 @@ header {
 }
 
 .feature-box h3 {
-    color: #afd06e;
+    color: #1d2a62;
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
 .feature-box p {
-    color: #87aece;
+    color: #333;
     font-size: 0.95rem;
     line-height: 1.4;
 }
