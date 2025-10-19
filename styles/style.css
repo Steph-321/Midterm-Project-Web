@@ -7,11 +7,10 @@
 }
 
 body {
-    background-color: #f5f3d8;
-    color: #87aece;
+    background-color: #E9EFEB;
+    color: #1A3225;
     scroll-behavior: smooth;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #f5f3d8, #afd06e);
 }
 
 .container {
@@ -38,6 +37,8 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
+    /* background-color: #2a4e4c; */
+    /* padding: 20px 40px; */
 }
 
 .logo-container {
@@ -51,21 +52,51 @@ header {
     display: block;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    height: 55px;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+}
+
+.nav-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-right: 50px;
+}
+
+.logo img{
+    width: 255px;
+    height: auto;
+    padding-left: 35px;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 4rem;
+    margin-left: auto;
 }
 
-.nav-links a{
+.nav-links li a {
+    color: #E9EFEB;
+    font-size: 18px;
     text-decoration: none;
-    color: #87aece;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
-.nav-links a:hover {
-    color: #afd06e;
+.nav-links li a:hover {
+    color: #73A69D;
 }
 
 .hero {
@@ -77,9 +108,8 @@ header {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    color: #f5f3d8;
+    color: #E9EFEB;
     margin-top: 0;
-    background-color: red;
 }
 
 .overlay {
@@ -102,7 +132,7 @@ header {
     font-size: 5.5rem;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #afd06e;
+    color: #1A3225;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -111,14 +141,14 @@ header {
     max-width: 600px;
     margin: 0 auto 30px;
     line-height: 2;
-    color: #f5f3d8;
+    color: #ABB1AD;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
     text-decoration: none;
-    background-color: #afd06e;
-    color: #f5f3d8;
+    background-color: #73A69D;
+    color: #E9EFEB;
     padding: 15px 15px;
     border-radius: 50px;
     font-weight: bold;
@@ -200,8 +230,8 @@ header {
 }
 
 footer{
-    background-color: #87aece;
-    color: #f5f3d8;
+    background-color: #1A3225;
+    color: #E9EFEB;
     text-align: center;
     padding: 30px 0;
     font-size: 0.9rem;
