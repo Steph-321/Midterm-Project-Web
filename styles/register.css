@@ -114,6 +114,16 @@ header {
     margin: 0 auto;
 }
 
+.auth-icon{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .register-form-container h2 {
     font-size: 2rem;
     color: #73a69d;  /* Updated to new primary accent color */
