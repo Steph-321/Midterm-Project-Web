@@ -15,9 +15,7 @@ body {
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: 
-    color: white;
+    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
     padding: 0 60px;
     box-sizing: border-box;
 
@@ -185,7 +183,7 @@ body {
 
 .exploreNow {
     background: #81a78e;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .exploreNow:hover {
