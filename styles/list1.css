@@ -7,7 +7,7 @@
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    background: url("tree.jpg") no-repeat center center fixed;
+    background: url("../assets/buckstlist/tree.jpg") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
