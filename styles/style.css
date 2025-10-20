@@ -30,55 +30,53 @@ header {
 }
 
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    z-index: 50;
-    backdrop-filter: blur(15px);
-    justify-content: center;
-}
-
-.nav-cont {
-    width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    padding-right: 50px;
+    background: 
+    color: white;
+    padding: 0 60px;
+    box-sizing: border-box;
 }
 
-.logo img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-left: 35px;
-    margin-top: 20px;
-}
-
-.nav-links {
+.logo {
     display: flex;
-    list-style: none;
-    gap: 4rem;
-    margin-left: auto;
+    align-items: center;
+    gap: 10px; 
 }
 
-.nav-links li a {
-    color: #73a69d; 
-    font-size: 18px;
-    text-decoration: none;
+.logo img{
+    width: 50px;
+    height: auto;
+    padding-left: 35px;
+}
+
+.logo p {
+    font-size: 25px;
     font-weight: bold;
-    transition: color 0.3s ease;
+    letter-spacing: 1px;
+    color: #051f20;
 }
 
-.nav-links li a:hover {
-    color: #abb1ad;  
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #051f20;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: #88ae95;
 }
 
 /* Hero Section */
