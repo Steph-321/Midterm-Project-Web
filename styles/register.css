@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #e9efeb;  /* Updated to new light background color */
-    color: #abb1ad;  /* Updated to new secondary text color */
+    background-color: #e9efeb; 
+    color: #abb1ad;  
     scroll-behavior: smooth;
     line-height: 1.6;
 }
@@ -19,74 +19,67 @@ body {
     padding: 0 20px;
 }
 
-header {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    padding: 20px 0;
-}
-
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; 
-    height: 55px;
-    display: flex;
-    align-items: center;
-    z-index: 50;
-    /* backdrop-filter: blur(15px); */
-    justify-content: center;
-}
-
-.nav-cont {
     width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    padding-right: 50px;
+    background-color: #e9efeb;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
 }
 
 .logo img{
-    width: 255px;
+    width: 50px;
     height: auto;
-    padding-left: 35px;
+    /* padding-left: 35px;  */
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 4rem;
-    margin-left: auto;
-}
-
-.nav-links li a {
-    color: #87aece;
-    font-size: 18px;
-    text-decoration: none;
+.logo p {
+    font-size: 25px;
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #73a69d;
 }
 
-.nav-links li a:hover {
-    color: #afd06e;
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #73a69d;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: #88ae95;
 }
 
 /* REGISTER PAGE */
 .register-hero {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     height: 100vh;
     background: url(../assets/index/bg.jpg) no-repeat center center/cover;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #e9efeb;  /* Updated to new light color (fixed from 'columns') */
-    padding: 100px 20px;  /* Fixed padding syntax */
+    color: #e9efeb;  
+    padding: 0;  
 }
 
 .register-hero .overlay {
@@ -95,7 +88,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(42, 78, 76, 0.3), rgba(115, 166, 157, 0.3));  /* Updated with new dark (#2a4e4c) and primary (#73a69d) colors; fixed parentheses */
+    background: linear-gradient(to bottom, rgba(42, 78, 76, 0.3), rgba(115, 166, 157, 0.3));  
     backdrop-filter: blur(2px);
     z-index: 1;
 }
@@ -126,7 +119,7 @@ header {
 
 .register-form-container h2 {
     font-size: 1.5rem;
-    color: #73a69d;  /* Updated to new primary accent color */
+    color: #73a69d;  
     margin-bottom: 20px;
     text-align: center;
 }
@@ -143,26 +136,26 @@ header {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #abb1ad;  /* Updated to new secondary text color */
+    color: #abb1ad; 
     font-weight: bold;
 }
 
 .form-group input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #73a69d;  /* Updated to new primary accent color */
+    border: 1px solid #73a69d;  
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
-    border-color: #2a4e4c;  /* Updated to new dark accent color */
+    border-color: #2a4e4c; 
     outline: none;
 }
 
 .register-link {
-    color: #73a69d;  /* Updated to new primary accent color */
+    color: #73a69d;  
     font-weight: 500;
     text-decoration: none;
 }
@@ -176,8 +169,8 @@ header {
 
 .btn {
     display: block;
-    background-color: #73a69d;  /* Updated to new primary accent color */
-    color: #e9efeb;  /* Updated to new light color */
+    background-color: #73a69d;  
+    color: #e9efeb; 
     padding: 12px 30px;
     border-radius: 30px;
     font-weight: bold;
@@ -186,22 +179,22 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin: 0 auto;
-    border: none;  /* Added for consistency */
+    border: none;  
 }
 
 .btn:hover {
-    background-color: #2a4e4c;  /* Updated to new dark accent color */
+    background-color: #2a4e4c;  
     transform: scale(1.05);
 }
 
 .btn:focus {
-    outline: 2px solid #abb1ad;  /* Updated to new secondary color */
+    outline: 2px solid #abb1ad;  
     outline-offset: 2px;
 }
 
 .error-message {
     display: none;
-    color: #2a4e4c;  /* Updated to new dark color for better contrast */
+    color: #2a4e4c;  
 }
 
 @keyframes fadeInUp {

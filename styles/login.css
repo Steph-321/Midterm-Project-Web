@@ -19,60 +19,53 @@ body {
     padding: 0 20px;
 }
 
-header {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    padding: 20px 0;
-}
-
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; 
-    height: 55px;
-    display: flex;
-    align-items: center;
-    z-index: 50;
-    backdrop-filter: blur(15px);
-    justify-content: center;
-}
-
-.nav-cont {
     width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    padding-right: 50px;
+    background-color: #e9efeb;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
 }
 
 .logo img{
-    width: 255px;
+    width: 50px;
     height: auto;
-    padding-left: 35px;
+    /* padding-left: 35px; */
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 4rem;
-    margin-left: auto;
-}
-
-.nav-links li a {
-    color: #87aece;
-    font-size: 18px;
-    text-decoration: none;
+.logo p {
+    font-size: 25px;
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #73a69d;
 }
 
-.nav-links li a:hover {
-    color: #afd06e;
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #73a69d;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: #88ae95;
 }
 
 /* LOGIN PAGE */
@@ -85,7 +78,7 @@ header {
     justify-content: center;
     text-align: center;
     color: #e9efeb;  /* Updated to new light color */
-    padding-top: 100px;
+    padding-top: 0;
 }
 
 .login-hero .overlay {
