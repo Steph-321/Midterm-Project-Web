@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #f5f3d8;
-    color: #87aece;
+    background-color: #e9efeb;  /* Updated to new light background color */
+    color: #abb1ad;  /* Updated to new secondary text color */
     scroll-behavior: smooth;
     line-height: 1.6;
 }
@@ -26,44 +26,52 @@ header {
     left: 0;
     z-index: 1000;
     padding: 20px 0;
-    /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); */
-    /* background: rgba(245, 243, 216, 0.95); */
 }
 
-.nav-bar {
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    height: 55px;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+}
+
+.nav-cont {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+    height: 80px;
+    padding-right: 50px;
 }
 
-.logo-container {
-    border-radius: 12px;
-    /* box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2); */
-}
-
-.logo {
-    width: 180px; 
+.logo img{
+    width: 255px;
     height: auto;
-    display: block;
+    padding-left: 35px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 4rem;
+    margin-left: auto;
 }
 
-.nav-links a{
-    text-decoration: none;
+.nav-links li a {
     color: #87aece;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.nav-links a:hover {
+.nav-links li a:hover {
     color: #afd06e;
 }
 
@@ -71,12 +79,12 @@ header {
 .login-hero {
     position: relative;
     height: 100vh;
-    background: url('../../assets/bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/index/bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #f5f3d8;
+    color: #e9efeb;  /* Updated to new light color */
     padding-top: 100px;
 }
 
@@ -86,7 +94,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(135, 174, 206, 0.3), rgba(175, 208, 110, 0.3));
+    background: linear-gradient(to bottom, rgba(42, 78, 76, 0.3), rgba(115, 166, 157, 0.3));  /* Updated with new dark (#2a4e4c) and primary (#73a69d) colors */
     backdrop-filter: blur(2px);
     z-index: 1;
 }
@@ -106,7 +114,7 @@ header {
 
 .login-form-container h2 {
     font-size: 2rem;
-    color: #afd06e;
+    color: #73a69d;  /* Updated to new primary accent color */
     margin-bottom: 20px;
     text-align: center;
 }
@@ -114,7 +122,7 @@ header {
 .login-form {
     display: flex;
     flex-direction: column;
-    color: #87aece;
+    color: #abb1ad;  /* Updated to new secondary text color */
 }
 
 .form-group {
@@ -124,27 +132,28 @@ header {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #87aece;
+    color: #abb1ad;  /* Updated to new secondary text color */
     font-weight: bold;
 }
+
 .form-group input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #afd06e;
+    border: 1px solid #73a69d;  /* Updated to new primary accent color */
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
-    border-color: #8fbf4f;
+    border-color: #2a4e4c;  /* Updated to new dark accent color */
     outline: none;
 }
 
 .btn {
     display: block;
-    background-color: #afd06e;
-    color: #f5f3d8;
+    background-color: #73a69d;  /* Updated to new primary accent color */
+    color: #e9efeb;  /* Updated to new light color */
     padding: 12px 30px;
     border-radius: 30px;
     font-weight: bold;
@@ -153,26 +162,34 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     margin: 0 auto;
+    border: none;  /* Added for consistency */
 }
 
 .btn:hover {
-    background-color: #8fbf4f;
+    background-color: #2a4e4c;  /* Updated to new dark accent color */
     transform: scale(1.05);
 }
 
 .btn:focus {
-    outline: 2px solid #87aece;
+    outline: 2px solid #abb1ad;  /* Updated to new secondary color */
     outline-offset: 2px;
 }
-
 
 .error-message {
     text-align: center;
     margin-top: 10px;
-    color: red;
+    color: #2a4e4c;  /* Updated to new dark color for better contrast */
     font-size: 0.9rem;
 }
+.register-link {
+    color: #73a69d;  /* Updated to new primary accent color */
+    font-weight: 500;
+    text-decoration: none;
+}
 
+.register-link:hover {
+    text-decoration: underline;
+}
 @keyframes fadeInUp {
     from {
         opacity: 0;
