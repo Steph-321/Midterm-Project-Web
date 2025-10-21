@@ -7,98 +7,204 @@
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    background: url("../assets/buckstlist/tree.jpg") no-repeat center center fixed;
     background-size: cover;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    position: relative;
 }
 
-body::before {
-    content: "";
+.nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background:  rgb(0, 0, 0, 0.4);
-    z-index: 0;
-}
-
-.container{
-    position: relative;
-    z-index: 1;
-    background: rgb(255,255, 255, 0.20);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: (10px);
-    padding: 40px 60px;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
-}
-
-.wisteria {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 40px;
-    color: #e8eeeb;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    text-shadow: 2px 3px 3px rgba(54, 88, 25, 0.8);
-}
-
-p{
-    color: #95aa9a;
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-weight: 500;
-
-}
-
-.bucket-list{
-    text-align: left;
-}
-
-.item{
+    right: 0;
+    width: 100%; 
+    height: 55px;
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
-    font-size: 18px;
-    background-color: rgb(255, 255, 255, 0.9);
-    padding: 10px 15px;
-    border-radius: 12px;
-    transition: background 0.3s, transform 0.2s;
-    border: 2px solid #145a32;
-    font-weight: 300;
+    z-index: 50;
+    backdrop-filter: blur(15px);
+    justify-content: center;
 }
 
-.item:hover {
+.nav-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding-right: 50px;
+}
+
+.logo img{
+    width: 255px;
+    height: auto;
+    padding-left: 35px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    color: #87aece;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #afd06e;
+}
+
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.blur-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px 60px;
+    text-align: center;
+    width: 90%;
+    max-width:  700px;
+    color: rgba(255, 255, 255, 0.952);
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    color: #dfe6e9;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.bucket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bucket-table th,
+.bucket-table td {
+    background: rgba(255, 255, 255, 0.411);
+    color: #000;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #c4ddcf48;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bucket-table th {
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+}
+
+.bucket-table tr {
+    transition: background 0.3s, transform 0.2s;
+
+}
+
+.bucket-table tr:hover {
     background-color: rgba(220, 255, 220, 0.9);
     transform: scale(1.02);
-}
-
-.item input[type="checkbox"] {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    accent-color: #145a32;
-    cursor: pointer;
 
 }
 
-.item input[type="checkbox"]:checked + span {
+.bucket-table input[type="checkbox"]:checked {
     text-decoration: line-through;
-    color: gray;
-    opacity: 0.7;
+}
 
+.add-destination {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.add-destination label {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.add-destination input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .blur-box {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .bucket-table th,
+    .bucket-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+}
+footer {
+  background: none;
+  background-color: transparent;
+  color: #f5f3d8;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a img {
+  width: 25px;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
 }
 
