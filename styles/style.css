@@ -24,10 +24,10 @@ body {
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #e9efeb;
+    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
     padding: 0 60px;
     box-sizing: border-box;
+
 }
 
 .logo {
@@ -46,7 +46,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #73a69d;
+    color: #051f20;
 }
 
 .navLinks {
@@ -59,7 +59,7 @@ body {
 
 .navLinks a {
     text-decoration: none;
-    color: #73a69d;
+    color: #051f20;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -67,6 +67,7 @@ body {
 .navLinks a:hover {
     color: #88ae95;
 }
+
 
 /* Hero Section */
 .hero {
@@ -114,7 +115,7 @@ body {
     font-size: 4rem;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #73a69d; 
+    color: #88ae95; 
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -129,7 +130,7 @@ body {
 
 .btn {
     text-decoration: none;
-    background-color: #73a69d;  
+    background-color: #88ae95;  
     color: #e9efeb; 
     padding: 15px 30px;
     border-radius: 50px;
@@ -152,7 +153,7 @@ body {
 .about-section {
     padding: 100px 80px;
     background-color: #e9efeb;
-    background: linear-gradient(135deg, #e9efeb, #abb1ad); 
+    background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%); 
     text-align: left;
     animation: fadeInUp 1s ease-out 0.5s both;
 }
@@ -200,7 +201,7 @@ body {
     align-items: center; 
     text-align: center;
     width: 100%;
-    background-color: #e9efeb; 
+    background: whitesmoke;
     padding: 30px 25px; 
     border-radius: 20px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); 
