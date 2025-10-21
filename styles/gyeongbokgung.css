@@ -64,7 +64,7 @@ body {
 
 header.hero{
     position: relative;
-    background: url("gyeongbukgung.webp");
+    background: url("../assets/details/gyeongbukgung.webp");
     background-size: cover;
     background-position: center;
     height: 60vh;

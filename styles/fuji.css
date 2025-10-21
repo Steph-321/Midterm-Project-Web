@@ -139,7 +139,7 @@ body {
 
 header.hero{
     position: relative;
-    background: url("fuji.jpg");
+    background: url("../assets/details/fuji.jpg");
     background-size: cover;
     background-position: center;
     height: 60vh;
