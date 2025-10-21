@@ -3,49 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Bucket list</title>
-    <link rel = "stylesheet" href="../styles/list1.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+   
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav-cont">
+            <div class="logo">
+                <img src="logoo.png" alt="MADESCAPE">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>  
+        </div> 
+    </nav>
     <div class="container">
-        <h1 class="wisteria">Adventure bucketlist</h1>
-        <p>complete your list and enjoy your travel</p>
+        <div class = "blur-box">
+            <h1>ADVENTURE BUCKETLIST</h1>
+            <p>complete your list and enjoy your travel!</p>
 
-        <div class="bucket-list">
-            <label class="item">
-                <input type = "checkbox">
-                <span>See Mount Fuji(japan)</span>
-            </label>
+            <table class="bucket-table">
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Destination</th>
+                        <th>Done</th>
 
-            <label class = "item">
-                <input type="checkbox">
-                <span>Try swiss chocolates and cheese fondue(switzerland)</span>
-            </label>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Japan</td>
+                        <td>Mount Fuji</td>
+                        <td><input type="checkbox"></td>
 
-            <label class="item">
-                <input type="checkbox">
-                <span>Experience k-pop culture and visit hongdae(south korea)</span>
-            </label>
+                    </tr>
+                    <tr>
+                        <td>Korea</td>
+                        <td>Bukchon Village</td>
+                        <td><input type="checkbox"></td>
 
-            <label class="item">
-                <input type="checkbox">
-                <span>See the eiffel tower(france)</span>
-            </label>
+                    </tr>
+                    <tr>
+                        <td>France</td>
+                        <td>Eiffel Tower</td>
+                        <td><input type="checkbox"></td>
 
-            <label class="item">
-                <input type="checkbox">
-                <span>Swim at Navagio beach(greece)</span>
-            </label>
+                    </tr>
+                    <tr>
+                        <td>Greece</td>
+                        <td>Navagio Beach</td>
+                        <td><input type="checkbox"></td>
 
-            <label class="item">
-                <input type="checkbox">
-                <span>See the cherry blossoms in spring(japan)</span>
-            </label>
+                    </tr>
+                    <tr>
+                        <td>Switzerland</td>
+                        <td>Swiss Alps</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+        </tbody>
+      </table>
 
-        </div>
+      <div class="add-destination">
+        <label for="newDestination">Add destination:</label>
+        <input type="text" id="newDestination" placeholder="Type here...">
+      </div>
     </div>
-    
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Madescape. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="http://facebook.com"><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href="http://instagram.com"><img src="assets/IG.png" alt="Instagram"></a>
+                <a href="http://twitter.com"><img src="assets/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+  </div>
 </body>
 </html>
