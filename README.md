@@ -46,7 +46,3 @@ Features
 - Organized travel recommendations per country  
 - Easy “Add to Bucket List” feature for saving destinations  
 - Modern and clean interface  
-
-<img width="1915" height="917" alt="image" src="https://github.com/user-attachments/assets/c0cca489-4c7f-4d36-bd84-f5a39d9f9234" />
-
-
