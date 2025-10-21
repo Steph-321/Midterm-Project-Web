@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    padding: 0 60px;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    padding-left: 35px;
+}
+
+.logo p {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #051f20;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #051f20;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: #88ae95;
+}
+
+body {
+    color:#1A3225;
+    background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+header.hero{
+    position: relative;
+    background: url("gyeongbukgung.webp");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #daf1de;
+}
+
+header .overlay{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text{
+    position: relative;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 4rem ;
+    margin-bottom: 0,5rem;
+}
+.back {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  font-weight: bold;
+}
+
+.back-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.back-links li a {
+  color: #E9EFEB;
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-links li a:hover {
+  color: #73A69D;
+}
+
+.container { 
+    max-width: 1100;
+    margin:  auto;
+    padding: 20px;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;  
+}
+
+.card {
+    flex: 1;
+    min-width: rgb(10, 23, 57);
+    margin: 10px;
+background: linear-gradient(160deg, #87ad94 10%, #dbf0dd 80%);    border-radius: 10px;
+    padding: 20px;
+}
+
+.about{
+    background: #e9efeb;
+    background-size: 50px;
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0.0.0.0.5);
+}
+.tips{
+    background: #e9efeb;
+    padding: 40px;
+    margin: 5px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0.0.0.0.5);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 30px;
+    color:#163832;
+}
+
+.button-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.button-links li a {
+    color: #E9EFEB;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-links li a:hover {
+    color: #163832;
+}
+.add, .view{
+    background-color: #73A69D;
+    color: #1A3225;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
