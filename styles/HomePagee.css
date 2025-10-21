@@ -15,7 +15,8 @@ body {
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    align-items: center;
+    background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
     padding: 0 60px;
     box-sizing: border-box;
 
@@ -33,11 +34,12 @@ body {
     padding-left: 35px;
 }
 
-.logo p {
+.logo p a{
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #051f20;
+    text-decoration: none;
 }
 
 .made {
@@ -64,7 +66,7 @@ body {
 }
 
 .navLinks a:hover {
-    color: #88ae95;
+    color: #235347;
 }
 
 .destination {

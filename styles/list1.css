@@ -38,15 +38,15 @@ body{
 .logo img{
     width: 50px;
     height: auto;
-    /* padding-left: 35px; */
 }
 
-.logo p {
+.logo a{
+    text-decoration: none;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #051f20;
-    padding-top: 25px;
+    align-items: center;
 }
 
 .navLinks {

@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
     color: white;
     padding: 0 60px;
     box-sizing: border-box;
@@ -32,7 +33,8 @@ body {
     padding-left: 35px;
 }
 
-.logo p {
+.logo a{
+    text-decoration: none;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -55,7 +57,7 @@ body {
 }
 
 .navLinks a:hover {
-    color: #88ae95;
+    color: #235347;
 }
 
 .continent {
@@ -120,6 +122,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .cardTitle {
