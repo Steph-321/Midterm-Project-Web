@@ -2,27 +2,121 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar{
-    font-size:small;
-    background-color: rgb(210, 217, 224);
+.nav {
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    height: 75px;
+    display: flex;
+    align-items: center;
+    z-index: 50;
+    backdrop-filter: blur(15px);
+}
+
+.nav-cont {
+    max-width: 1400px;
     width: 100%;
-    z-index: 20;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem; 
 }
 
-.Logo{
-    margin-top:10px;
-    margin-left: auto;
-    display:flex;    
-}
-
-.Logo img{
-    width: 160px;
+.logo img{
+    width: 255px;
     height: auto;
+    padding-left: 10px;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto ;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #E9EFEB;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #73a69d;
+}
+
+.home {
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+
+}
+.Home-grid {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Home-image {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.Home-overlay {
+    transform: scale(1.02);
+}
+
+.Home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 1rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.Home-card {
+    background-color: rgba(255, 255, 255, 0.95);;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(210, 230, 240, 0.5);
+}
+
+.Home-card:hover {
+    transform: scale(1.02);
+}
+.Home-card h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.Home-card p {
+    font-size: 1.25rem;
+    color: #2A4E4C;
+    margin-bottom: 2rem;
 }
 
 .icon{
@@ -37,11 +131,12 @@
     cursor: pointer;
     font-weight: 500;
     align-content: center;
+    color:E9EFEB;
 }
 
 body {
-    background-color: #e6e6d9;
-    color: #000000;
+    color:#1A3225;
+    background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
     scroll-behavior: smooth;
     line-height: 1.6;
 }
@@ -51,18 +146,17 @@ header.hero{
     background: url("bukchon hanok.webp");
     background-size: cover;
     background-position: center;
-    background-color: #e2ee75;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #daf1de;
 }
 
 header .overlay{
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
 }
 
 .hero-text{
@@ -71,8 +165,33 @@ header .overlay{
 }
 
 .hero-text h1{
-    font-size: 3rem ;
+    font-size: 4rem ;
     margin-bottom: 0,5rem;
+}
+.back {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  font-weight: bold;
+}
+
+.back-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.back-links li a {
+  color: #E9EFEB;
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-links li a:hover {
+  color: #73A69D;
 }
 
 .container { 
@@ -89,48 +208,59 @@ header .overlay{
 
 .card {
     flex: 1;
-    min-width: rgb(84, 113, 192);
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    min-width: rgb(10, 23, 57);
     margin: 10px;
-    background: rgb(175, 231, 119);
-}
-
-.button{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
- 
-}
-.add{
-    background: rgb(172, 233, 195);
-    padding: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    margin: 10px;
-}
-
-.view{
-    padding: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    margin: 10px;
-}
-.about, .tips{
-    background: white;
+background: linear-gradient(160deg, #87ad94 10%, #dbf0dd 80%);    border-radius: 10px;
     padding: 20px;
-    margin: 50px 0;
+}
+
+.about{
+    background: #e9efeb;
+    background-size: 50px;
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0.0.0.0.5);
+}
+.tips{
+    background: #e9efeb;
+    padding: 40px;
+    margin: 5px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0.0.0.0.5);
 }
 
-footer{
-    background: #f0eee9;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #555
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 30px;
+    color:#163832;
 }
 
+.button-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.button-links li a {
+    color: #E9EFEB;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-links li a:hover {
+    color: #163832;
+}
+.add, .view{
+    background-color: #73A69D;
+    color: #1A3225;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
