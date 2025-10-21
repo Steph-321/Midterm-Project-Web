@@ -7,25 +7,36 @@
     <link rel= "stylesheet" href ="Bukchon.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="Logo">
-            <img src="logo.png">
-        </div>
-
-        <div class="icon"> 
-            <p>Home</p> 
-            <p>Destination</p>  
-            <p>Bucket List</p> 
-            <p>👤</p>
+    <nav class="nav">
+        <div class="nav-cont">
+            <div class="logo">
+                <img src="logo.png" alt="MADESCAPE">
+            </div>
+            <div class="navright">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#destination">Destination</a></li>
+                    <li><a href="#">Bucket List</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul> 
+            </div>  
         </div> 
     </nav>
 
     <header class ="hero">
         <div class="overlay"></div>
+
+        <div class="back">
+        <ul class="back-links">
+            <li><a href="#">⬅</a></li>
+        </ul>
+        </div>
+
         <div class="hero-text">
             <h1>Bukchon Hakton Village</h1>
             <p>Embrace the traditional side of Seoul in Bukchon Hanok Village.</p>
-        </div>      
+            </div>
+        </div>  
     </header>
 
     <main class="container">
@@ -61,19 +72,13 @@
                 <li>Dining: Sample local cuisine at cafes and restaurants within the village.</li>
             </ol>
         </section>
-        <section class="button">
-            <div class="add">
-                <p> Add to Bucket List</p>
-            </div>
 
-            <div class="view">
-                <p> View Bucket List</p>
-            </div>
-        </section>
+        <div class="button">
+                <ul class="button-links">
+                    <li><a href="#">🖤Add to Bucket List</a></li>
+                    <li><a href="#">View Bucket List</a></li>
+                </ul> 
+            </div>  
     </main>
-    
-    <footer>
-        <p>2025 MADESCAPE | Discover South Korea</p>
-    </footer>
 </body>
 </html>

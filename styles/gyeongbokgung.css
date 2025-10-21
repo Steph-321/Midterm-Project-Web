@@ -4,134 +4,55 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; 
-    height: 75px;
-    display: flex;
-    align-items: center;
-    z-index: 50;
-    backdrop-filter: blur(15px);
-}
 
-.nav-cont {
-    max-width: 1400px;
+
+.nav {
     width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    padding: 0 60px;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    display: flex;
     align-items: center;
-    height: 80px;
-    padding: 0 1rem; 
+    gap: 10px; 
 }
 
 .logo img{
-    width: 255px;
+    width: 100px;
     height: auto;
-    padding-left: 10px;
+    padding-left: 35px;
 }
 
-.navright {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-left: auto ;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links li a {
-    color: #E9EFEB;
-    font-size: 22px;
-    text-decoration: none;
+.logo p {
+    font-size: 25px;
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #051f20;
 }
 
-.nav-links li a:hover {
-    color: #73a69d;
-}
-
-.home {
-    height: 800px;
-    position: relative;
+.navLinks {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-
-}
-.Home-grid {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 0;
+    padding: 0;
 }
 
-.Home-image {
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+.navLinks a {
+    text-decoration: none;
+    color: #051f20;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.Home-overlay {
-    transform: scale(1.02);
-}
-
-.Home-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    padding: 1rem;
-    max-width: 42rem;
-    margin: 0 auto;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-}
-
-.Home-card {
-    background-color: rgba(255, 255, 255, 0.95);;
-    border-radius: 24px;
-    padding: 3rem 2rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(210, 230, 240, 0.5);
-}
-
-.Home-card:hover {
-    transform: scale(1.02);
-}
-.Home-card h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.Home-card p {
-    font-size: 1.25rem;
-    color: #2A4E4C;
-    margin-bottom: 2rem;
-}
-
-.icon{
-    margin-bottom: 10px;
-    justify-content: right;
-    display: flex;
-    gap: 20px;
-    
-}
-.icon p{
-    margin: 2000;
-    cursor: pointer;
-    font-weight: 500;
-    align-content: center;
-    color:E9EFEB;
+.navLinks a:hover {
+    color: #88ae95;
 }
 
 body {
@@ -143,7 +64,7 @@ body {
 
 header.hero{
     position: relative;
-    background: url("bukchon hanok.webp");
+    background: url("gyeongbukgung.webp");
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -170,7 +91,7 @@ header .overlay{
 }
 .back {
   position: absolute;
-  top: 80px;
+  top: 6px;
   left: 30px;
   font-weight: bold;
 }

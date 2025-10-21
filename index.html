@@ -4,67 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madescape | Travel Beyond the Map</title>
+    <link rel="icon" href="assets/index/icon.png" type="png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo-container">
-                <img src="assets/Logo.png" alt="Madescape Logo" class="logo">
+        <nav class="nav">
+            <div class="logo">
+                <img src="assets/index/logos.png" alt="MADESCAPE">
+                <p>MADESCAPE</p>
             </div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
+            <ul class="navLinks">
                 <li><a href="#about">About</a></li>
-                <li><a href="pages/login/login.html">Login</a></li>
+                <li><a href="../pages/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="overlay"></div>
         <div class="content">
-            <h1>Adventure starts here!</h1>
-            <p>From breathtaking views to unforgettable adventures.<br>Travel the world. Feel alive.</p>
-            <a href="pages/login/login.html" class="btn">Discover Now</a>
+            <h1>Explore the World Beyond Borders</h1>
+            <p>Travel the world. Feel alive.</p>
+            <a href="../pages/login.html" class="btn">Discover Now</a>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <h2>Why Choose Madescape?</h2>
-            <p>We're passionate about turning your wanderlust into reality. With curated destinations and easy planning tools, your next journey is just a click away.</p>
+    <section class="about-section" id="about">
+        <div class="about-header">
+            <h2>Why Choose <span class="highlight">Madescape?</span></h2>
+            <p class="intro">
+                We're passionate about turning your wanderlust into reality. With curated destinations and easy planning tools, your next journey is just a click away.
+            </p>
+            <div class="features-inline">
+                <div class="feature-box">
+                    <img src="assets/index/globe-icon.png" alt="Explore Destinations" />
+                    
+                    <h3>Explore Destinations</h3>
+                    <p>Browse through hundreds of amazing destinations worldwide.</p>
+                    
+                </div>
+                <div class="feature-box">
+                    <img src="assets/index/calendar-icon.png" alt="Plan Your Trips" />
+                        <h3>Plan Your Trips</h3>
+                        <p>Organize and schedule your dream vacation effortlessly.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="assets/index/heart-icon.png" alt="Save Your Favorites" />
+                        <h3>Save Your Favorites</h3>
+                        <p>Create your personal bucket list of places to visit.</p>
+                </div>
+            </div>
         </div>
-
     </section>
 
-    <section class="features" id="features">
-        <div class="feature-box">
-           <img src="assets/globe-icon.png" alt="Explore Destinations"/>
-            <h3>Explore Destinations</h3>
-            <p>Browse through hudreds of amazing destinations worldwilde.</p>
-        </div>
-
-        <div class="feature-box">
-            <img src="assets/calendar-icon.png" alt="Plan Your Trips">
-            <h3>Plan Your Trips</h3>
-            <p>Organize and schedule your dream vacation effortlessly.</p>
-        </div>
-
-        <div class="feature-box">
-            <img src="assets/heart-icon.png" alt="Save Your Favorites">
-            <h3>Save Your Favotites</h3>
-            <p>Create your personal bucket list of places to visit.</p>
-        </div>
-    </section>
 
     <footer>
-        <div class="footer-content">
-            <p>© 2025 Madescape. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="http://facebook.com"><img src="assets/facebook.png" alt="Facebook"></a>
-                <a href="http://instagram.com"><img src="assets/IG.png" alt="Instagram"></a>
-                <a href="http://twitter.com"><img src="assets/twitter.png" alt="Twitter"></a>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <p>Explore the world with curated destinations and seamless planning tools.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="http://facebook.com" aria-label="Visit our Facebook page"><img src="../assets/index/facebook.png" alt="Facebook" loading="lazy"></a>
+                    <a href="http://instagram.com" aria-label="Visit our Instagram page"><img src="../assets/index/IG.png" alt="Instagram" loading="lazy"></a>
+                    <a href="http://twitter.com" aria-label="Visit our Twitter page"><img src="../assets/index/twitter.png" alt="Twitter" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="footer-bottom"> 
+                <p>© 2025 Madescape. All rights reserved.</p>
             </div>
         </div>
     </footer>
