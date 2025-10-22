@@ -29,7 +29,8 @@
     padding-left: 35px;
 }
 
-.logo p {
+.logo a {
+    text-decoration: none;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -64,7 +65,7 @@ body {
 
 header.hero{
     position: relative;
-    background: url("gyeongbukgung.webp");
+    background: url("../assets/details/gyeongbukgung.webp");
     background-size: cover;
     background-position: center;
     height: 60vh;

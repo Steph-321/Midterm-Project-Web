@@ -5,56 +5,53 @@
     font-family: 'Poppins', sans-serif;
 }
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%; 
-    height: 75px;
-    display: flex;
-    align-items: center;
-    z-index: 50;
-    backdrop-filter: blur(15px);
-}
-
-.nav-cont {
-    max-width: 1400px;
     width: 100%;
+    height: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    padding: 0 60px;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    display: flex;
     align-items: center;
-    height: 80px;
-    padding: 0 1rem; 
+    gap: 10px; 
 }
 
 .logo img{
-    width: 255px;
+    width: 50px;
     height: auto;
-    padding-left: 10px;
+    padding-left: 35px;
 }
 
-.navright {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-left: auto ;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links li a {
-    color: #E9EFEB;
-    font-size: 22px;
+.logo a{
     text-decoration: none;
+    font-size: 25px;
     font-weight: bold;
+    letter-spacing: 1px;
+    color: #051f20;
 }
 
-.nav-links li a:hover {
-    color: #73a69d;
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #051f20;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+    color: #88ae95;
 }
 
 .home {
@@ -143,7 +140,7 @@ body {
 
 header.hero{
     position: relative;
-    background: url("bukchon hanok.webp");
+    background: url("../assets/details/bukchon\ hanok.webp");
     background-size: cover;
     background-position: center;
     height: 60vh;
