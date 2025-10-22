@@ -46,11 +46,12 @@ body {
   padding-left: 35px;
 }
 
-.logo p {
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #051f20; 
+.logo a {
+  text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #051f20;
 }
 
 .navLinks {
@@ -70,7 +71,12 @@ body {
   color: #1d3557;
 }
 
+.navLinks a:hover {
+    color: #88ae95;
+}
 
+
+/* HERO SECTION */
 .hero {
   height: 400px;
   background-size: cover;
@@ -146,7 +152,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);

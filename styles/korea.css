@@ -46,11 +46,12 @@ body {
   padding-left: 35px;
 }
 
-.logo p {
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #051f20; 
+.logo a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #051f20;
 }
 
 .navLinks {
@@ -182,8 +183,8 @@ body {
   min-height: 50px;
 }
 
-
-.spot-card button {
+/* BUTTON STYLING */
+.view {
   margin-top: auto;
   margin-bottom: 20px;
   align-self: center;
@@ -197,6 +198,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.spot-card button:hover {
-  background-color: #1d3557; 
+.view:hover {
+  background-color: #afd06e;
 }
