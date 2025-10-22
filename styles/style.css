@@ -116,13 +116,13 @@ body {
     z-index: 1;
 }
 
-.content {
+.content1 {
     position: relative;
     z-index: 2;
     padding: 0 20px;
 }
 
-.content h1 {
+.content1 h1 {
     font-size: 4rem;
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -130,7 +130,7 @@ body {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.content p {
+.content1 p {
     font-size: 1.5rem;
     max-width: 600px;
     margin: 0 auto 30px;
@@ -203,8 +203,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: normal;
     position: relative;
     transition: 0.3s;
     left: 0;
@@ -237,23 +237,29 @@ body {
 }
 
 .cardTitle {
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-weight: 600;
+    /* transform: translateX(-50%); */
     color: #051f20;
     font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 10px;
+
 }
 
 .content {
     padding: 15px;
-    text-align: centerr;
+    text-align: center;
 }
 
 .des {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.6;
     color: #5c5c5c;
     font-weight: normal;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .explore {
@@ -291,6 +297,7 @@ body {
     border-radius: 8px;
     padding: 5px 10px;
     color: #ffffff;
+    font-size: 15px;
     text-decoration: none;
 }
 
