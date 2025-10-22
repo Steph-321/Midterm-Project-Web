@@ -3,7 +3,7 @@ body {
             flex-direction: column;
             align-items: center;
             margin: 0;
-            background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+            background: linear-gradient(to bottom, #a8dadc, #fcd5ce);
             font-family: 'Poppins', sans-serif;
             overflow-y: auto;
             padding-bottom: 40px;
@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    background: transparent;
     color: white;
     padding: 0 60px;
     box-sizing: border-box;
@@ -39,6 +39,15 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     color: #051f20;
+}
+
+.nav-search input {
+    width: 350px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: inherit;
 }
 
 .navLinks {
@@ -130,8 +139,7 @@ body {
     bottom: 120px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
-    text-shadow: 0 0 5px black;
+    color: #051f20;
     font-size: 20px;
     padding-top: 20px;
 }
@@ -147,9 +155,9 @@ body {
     font-weight: normal;
 }
 
-.explore  {
-    background: #8cb79b;
-    color: #173831;
+.explore {
+    background-color: #457b9d;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
@@ -159,5 +167,5 @@ body {
 }
 
 .explore:hover {
-    background: #dbf0dd;
+    background: #1d3557;
 }
