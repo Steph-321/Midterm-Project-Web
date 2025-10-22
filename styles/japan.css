@@ -6,34 +6,44 @@
 }
 
 body {
-  background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+  background: linear-gradient(to bottom, #a8dadc, #fcd5ce);
   background-attachment: fixed;
   background-size: cover;
-  color: #1a3225;
+  color: #051f20; 
 }
 
-/* NAVIGATION BAR */
+
 .nav {
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    align-items: center;
     padding: 0 60px;
     box-sizing: border-box;
 
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(20px);           
+    -webkit-backdrop-filter: blur(20px);   
+    color: #051f20;
+    font-weight: bold;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo img{
-    width: 100px;
-    height: auto;
-    padding-left: 35px;
+.logo img {
+  width: 100px;
+  height: auto;
+  padding-left: 35px;
 }
 
 .logo a {
@@ -45,22 +55,20 @@ body {
 }
 
 .navLinks {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 .navLinks a {
-    text-decoration: none;
-    color: #051f20;
-    font-weight: bold;
-    transition: 0.3s;
+  text-decoration: none;
+  color: #457b9d; 
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .navLinks a:hover {
-    color: #88ae95;
+  color: #1d3557;
 }
 
 .navLinks a:hover {
@@ -76,14 +84,14 @@ body {
   position: relative;
   display: flex;
   align-items: flex-end;
-  color: #e9efeb;
+  color: #ffffff;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(17, 16, 16, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-text {
@@ -96,17 +104,18 @@ body {
   font-size: 3em;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .hero-text p {
   font-size: 1.2em;
-  color: #e9efeb;
+  color: #fcd5ce;
 }
 
 .back-link {
   display: inline-block;
   margin-bottom: 10px;
-  color: #e9efeb;
+  color: #ffffff; 
   text-decoration: none;
   font-size: 0.9em;
 }
@@ -115,10 +124,10 @@ body {
   text-decoration: underline;
 }
 
-/* SPOTS SECTION */
+
 .spots-section {
   padding: 40px 60px;
-  background-color: rgba(236, 243, 238, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   margin: 30px auto;
   width: 90%;
@@ -127,26 +136,26 @@ body {
 
 .spots-section h2 {
   margin-bottom: 30px;
-  color: #1a3225;
+  color: #051f20; 
   text-align: center;
 }
 
-/* GRID LAYOUT */
+
 .spots-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-/* CARD STYLING */
+
 .spot-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fffdf4;
+
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   height: 100%;
@@ -154,45 +163,46 @@ body {
 
 .spot-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* IMAGE SIZE IN CARD */
+
 .spot-card img {
   width: 100%;
-  height: 320px; /* made larger */
+  height: 320px;
   object-fit: cover;
 }
 
+
 .spot-card h3 {
   margin: 15px 0 8px 0;
-  color: #1a3225;
+  color: #051f20; /
 }
 
 .spot-card p {
   flex-grow: 1;
   font-size: 0.95em;
-  color: #2a4e4c;
+  color: #5c5c5c; 
   padding: 0 15px;
   margin-bottom: 10px;
   min-height: 50px;
 }
 
-/* BUTTON STYLING */
+
 .spot-card button {
   margin-top: auto;
   margin-bottom: 20px;
   align-self: center;
   padding: 10px 20px;
   border: none;
-  background-color: #87ad94;
+  background-color: #457b9d; 
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  color: #1a3225;
-  transition: 0.2s;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 .spot-card button:hover {
-  background-color: #afd06e;
+  background-color: #1d3557; 
 }

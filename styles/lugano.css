@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.2); /* light transparent white */
+    backdrop-filter: blur(20px);           /* blur the content behind */
+    -webkit-backdrop-filter: blur(20px);   /* for Safari compatibility */
+    color: #051f20;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    padding-left: 35px;
+}
+
+.logo a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #051f20;
+    font-size: 100x;  
+    font-weight: bold;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #051f20;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: #1d3557;
+}
+
+
+body {
+    color:#5c5c5c;
+    background: linear-gradient(#a8dadc, #fcd5ce);
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+header.hero{
+    position: relative;
+    background: url("lugano-3272123-1024.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+header .overlay{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-text{
+    position: relative;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 4rem ;
+    margin-bottom: 0,5rem;
+}
+.back {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  font-weight: bold;
+}
+
+.back-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.back-links li a {
+  color: #E9EFEB;
+  font-size: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-links li a:hover {
+  color: #1d3557;
+}
+
+.container { 
+    max-width: 1100;
+    margin:  auto;
+    padding: 20px;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;  
+}
+
+.card {
+    flex: 1;
+    min-width: rgb(10, 23, 57);
+    margin: 10px;
+    background: #ffffff;    
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about{
+    background: #ffffff;
+    background-size: 50px;
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0.0.0.0.5);
+}
+.tips{
+    background: #ffffff;
+    padding: 40px;
+    margin: 5px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0.0.0.0.5);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 30px;
+    color:#163832;
+}
+
+.add{
+    background: #ffffff;
+    display: flex;
+    list-style: none;
+    gap: 2rem;   
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.add li a {
+    color:#5c5c5c;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.add li a:hover {
+    color: #1d3557;
+}
+
+
+.view{
+    background: #ffffff;
+    display: flex;
+    list-style: none;
+    gap: 2rem;   
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.view li a {
+    color:#5c5c5c;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view li a:hover {
+    color: #1d3557;
+}
