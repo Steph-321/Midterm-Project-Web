@@ -6,8 +6,8 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background: url("../assets/buckstlist/tree1.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(to bottom, #a8dadc, #fcd5ce);
+    /* background-size: cover; */
     height: 100vh;
     /* display: flex; */
     /* justify-content: center; */
@@ -20,7 +20,8 @@ body{
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;background: linear-gradient(160deg, #dbf0dd 20%, #87ad94 80%);
+    background: transparent;
+    align-items: center;
     padding: 0 60px;
     box-sizing: border-box;
 
@@ -68,6 +69,120 @@ body{
     color: #235347;
 }
 
+.account-link{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #a8dadc;
+    color: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: linear-gradient(to bottom, #a8dadc, #fcd5ce);
+    backdrop-filter: blur(15px);
+    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.2);
+    padding:  40px 20px;
+    padding-top: 10px;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+}
+
+.sidebar h2{
+    font-size: 16px;
+    color: #051f20;
+    margin-top: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 13px ;
+    color: #214f44;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    color: #051f20;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.icon-sidebar{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    /* filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2)); */
+}
+.sidebar ul li a .icon-sidebar {
+   transform: scale(1.1);
+   transition: transform 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #457b9d;
+    cursor: pointer;
+}
+
+.sidebar .close-btn {
+    align-self: flex-start;
+    margin-top: 15px;
+    background: #457b9d;
+    color: whitesmoke;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: normal;
+    /* padding-bottom: 15px; */
+}
+
+.sidebar .close-btn:hover {
+    background: #1d3557;
+}
+
+#accountSidebar:target {
+    transform: translateX(0);
+    animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
 .container {
     display:flex;
     justify-content: center;
@@ -93,11 +208,12 @@ h1 {
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+    color: #051f20;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 p {
-    color: #dfe6e9;
+    color: #051f20;
     font-size: 15px;
     margin-bottom: 25px;
 }
@@ -146,7 +262,7 @@ p {
 }
 
 .add-destination label {
-    color: white;
+    color: #051f20;
     font-size: 15px;
     margin-bottom: 8px;
 }
