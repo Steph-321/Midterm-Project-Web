@@ -22,7 +22,7 @@ body {
     padding: 0 60px;
     box-sizing: border-box;
 
-    background: rgba(255, 255, 255, 0.2); 
+    background: linear-gradient(to bottom, #a8dadc, #fcd5ce);
     backdrop-filter: blur(20px);           
     -webkit-backdrop-filter: blur(20px);   
     color: #051f20;
@@ -62,13 +62,13 @@ body {
 
 .navLinks a {
   text-decoration: none;
-  color: #457b9d; 
+  color: #051f20; 
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .navLinks a:hover {
-  color: #1d3557;
+  color: #235347;
 }
 
 
