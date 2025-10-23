@@ -14,7 +14,7 @@
     padding: 0 60px;
     box-sizing: border-box;
 
-    background: rgba(255, 255, 255, 0.2); /* light transparent white */
+    background: rgba(255, 255, 255, 0.2); 
     backdrop-filter: blur(20px);           /* blur the content behind */
     -webkit-backdrop-filter: blur(20px);   /* for Safari compatibility */
     color: #051f20;
